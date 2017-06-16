@@ -13,12 +13,12 @@ class WatchControl extends Component{
     return(
       <View style={styles.watchControlContainer}>
         <View style={styles.btnStopContainer}>
-          <TouchableHighlight style={styles.btnStop} underlayColor={this.props.data.btnStopUnderlayColor}>
+          <TouchableHighlight style={styles.btnStop} underlayColor={this.props.data.btnStopUnderlayColor} onPress={this.props.btnStopAction}>
             <Text style={[styles.btnStopText,{color:this.props.data.stopBtnTextColor}]}>{this.props.data.stopBtnText}</Text>
           </TouchableHighlight>
         </View>
         <View style={styles.btnStartContainer}>
-          <TouchableHighlight style={styles.btnStart} underlayColor={this.props.data.btnStartUnderlayColor}>
+          <TouchableHighlight style={styles.btnStart} underlayColor={this.props.data.btnStartUnderlayColor} onPress={this.props.btnStartAction}>
             <Text style={[styles.btnStartText,{color:this.props.data.startBtnTextColor}]}>{this.props.data.startBtnText}</Text>
           </TouchableHighlight>
         </View>
