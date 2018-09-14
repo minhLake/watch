@@ -1,11 +1,12 @@
 import React,{Component} from 'react';
 import { Text, View } from 'react-native';
+import PropTypes from 'prop-types';
 import styles from '../style.js';
 
 class WatchFace extends Component {
 	static propTypes = {
-    	sectionTime: React.PropTypes.string.isRequired,
-    	totalTime: React.PropTypes.string.isRequired,
+    	sectionTime: PropTypes.string.isRequired,
+    	totalTime: PropTypes.string.isRequired,
   	}; 
   	
 	render() {

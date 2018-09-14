@@ -1,8 +1,7 @@
 import React,{Component} from 'react';
-import { Text, View, StatusBar, Platform } from 'react-native';
+import { View } from 'react-native';
 
 import styles from '../style.js';
-import todo from '../Todo.js';
 
 import WatchFace from '../components/WatchFace.js';
 import WatchControl from '../components/WatchControl.js';
